@@ -10,7 +10,9 @@ The state observer is designed by obtained gain through "robust_observer_revised
 A state-observer is applied as a physical model to estimate the state of the time-varying uncertain model. Compared to using the original kinematic error equation directly, proposed method showed better learning performance since the training rate is dependent on dynamic characteristics. By "State_observer_PIML_training.py", trained PIML model is generated as "trained_PIML.pth".
 ## 3) Time-Varying Parameter Estimation
 Using a trained PIML model, parameter estimation is performed as following. This process is contained in "LF_tracking_control.py".
-![parameter_estimation](https://github.com/sjpark000/State-observer-PIML/blob/main/parameter_Case1_new.png)
+<p align="center">
+  <img src="https://github.com/sjpark000/State-observer-PIML/blob/main/parameter_Case1_new.png">
+</p>
 
 ## 4) Tracking control simulation
 The estiamted parameter is utilized for designing the feed-forward term of the tracking controller, which is the leader robot's velocity. The trajectories of leader and following robot are shown below.
