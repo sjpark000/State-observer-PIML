@@ -16,11 +16,13 @@ Using a trained PIML model, parameter estimation is performed as following. This
 
 ## 4) Tracking control simulation
 The estiamted parameter is utilized for designing the feed-forward term of the tracking controller, which is the leader robot's velocity. The trajectories of leader and following robot are shown below.
-![tracking control](https://github.com/sjpark000/State-observer-PIML/blob/main/traj_proposed_controller.jpg)
+<p align="center">
+  <img src="https://github.com/sjpark000/State-observer-PIML/blob/main/traj_proposed_controller.jpg">
+</p>
 
 ## 5) Experimental result
 To verify the control performance in real world, experiment is performed. The leader robot draws trajectory with given velocity, and the following robot receives leader robot's position to calculate positon error state, and time-varying parameter is estimated for every time-step. This process is performed in real-time to track the leader robot. The following is the video of the experiment.
 
-
-![ezgif com-video-to-gif (1)](https://github.com/sjpark000/State-observer-PIML/assets/110597177/fcc46278-1186-4b73-9acd-80a813c9aeaa)
-
+<p align="center">
+  <img src="https://github.com/sjpark000/State-observer-PIML/assets/110597177/fcc46278-1186-4b73-9acd-80a813c9aeaa">
+</p>
